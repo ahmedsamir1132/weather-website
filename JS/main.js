@@ -11,7 +11,7 @@ var weatherCondition;
 
 
 async function getweatherApi() {
-    var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=77a00e86a84742b0b6c224428211109&q=Cairo&days=3`);
+    var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77a00e86a84742b0b6c224428211109&q=Cairo&days=3`);
     weatherCondition = await response.json();
 }
 
@@ -34,7 +34,7 @@ async function getAllweather() {
     }
     else {
         search.onkeyup = async function () {
-            var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=77a00e86a84742b0b6c224428211109&q=${search.value}&days=3`);
+            var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77a00e86a84742b0b6c224428211109&q=${search.value}&days=3`);
             weatherCondition = await response.json();
             weatherDisplay();
             weatherDisplay2();
