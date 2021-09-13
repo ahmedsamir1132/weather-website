@@ -13,7 +13,6 @@ var weatherCondition;
 async function getweatherApi() {
     var response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=77a00e86a84742b0b6c224428211109&q=Cairo&days=3`);
     weatherCondition = await response.json();
-    console.log(weatherCondition);
 }
 
 function weatherDisplay() {
