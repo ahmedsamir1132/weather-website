@@ -1,0 +1,48 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://source.unsplash.com/1600x900/?cairo);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    padding: 13px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family: inherit;
+    font-size: 120%;
+    text-align: center;
+    outline: none;
+}
+
+.desc {
+    font-size: 24px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
